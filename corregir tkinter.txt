@@ -8,18 +8,27 @@ def saludar():
 ventana = tk.Tk() 
 ventana.title("mi primer app grafica") 
 ventana.geometry("400x200") 
+(ventana.config(bg="light pink"))
  
 etiqueta = tk.Label(ventana, text="Ingresa tu nombre:") 
 etiqueta.pack() 
  
-entrada = tk.Entry(ventana) 
-entrada.pack() 
- 
-boton = tk.Button(ventana, text="Saludar", command=saludar) 
+entrada_nombre = tk.Entry(ventana) 
+entrada_nombre.pack() 
+
+etiqueta = tk.Label(ventana, text="Ingresa tu edad:") 
+etiqueta.pack() 
+
+entrada_edad = tk.Entry(ventana) 
+entrada_edad.pack() 
+
+boton = tk.Button(ventana, text="mostrar saludo", command=saludar) 
 boton.pack() 
  
 etiqueta_resultado = tk.Label(ventana, text="") 
 etiqueta_resultado.pack() 
- 
+
+etiqueta_nombrecom = tk.Label(ventana, text="valeria madrid hernandez")
+etiqueta_nombrecom.pack()
 ventana.mainloop() 
  
